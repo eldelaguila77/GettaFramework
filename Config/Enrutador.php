@@ -27,7 +27,7 @@
             if(is_readable($ruta)){
                 require_once $ruta;
             }else{
-                print "<h1>Error 404, No se encontró la página solicitada.<h1>";
+                print "<h1>".E404."<h1>";
             }
         }
         

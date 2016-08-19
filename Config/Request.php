@@ -10,9 +10,8 @@
                 $ruta=  filter_input(INPUT_GET, 'url', FILTER_SANITIZE_URL);
                 $ruta=  explode("/", $ruta);
                 $ruta=  array_filter($ruta);
-                
                 if($ruta[0] =="index.php"){
-                    $this->controlador="estudiantes";
+                    $this->controlador=ViewIndex;
                 }else{
                     $this->controlador=  strtolower(array_shift($ruta));
                 }
@@ -23,7 +22,7 @@
                 }
                 $this->argumento= $ruta;
             }else{
-                $this->controlador="estudiantes";
+                $this->controlador=ViewIndex;
                 $this->metodo="index";
             }
         }
