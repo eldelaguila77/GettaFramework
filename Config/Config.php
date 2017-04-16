@@ -19,7 +19,7 @@ class Config{
         define("typeDB","PDO");
         define("host", "localhost");
         define("user", "root");
-        define("pass", "alemania2006");
+        define("pass", "yourpassword");
         define("db", "gettaframework");
                 
         //Mensajes de Error
