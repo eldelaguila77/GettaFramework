@@ -1,21 +1,21 @@
 <?php namespace Views;
-
     $template= new Template();
     
     class Template{
         public function __construct() {
             ?>
+            
             <!DOCTYPE html>
- 
             <html lang="es">
             <head>
-            <title>Administración de Estudiantes</title>
+            <title>GettaFramework</title>
             <meta charset="utf-8" />
             <link rel="stylesheet" href="<?php echo URL; ?>Views/template/css/icon.css" />
             <link rel="stylesheet" href="<?php echo URL; ?>Views/template/css/materialize.css" />
             <link rel="shortcut icon" href="/favicon.ico" />
-            <script src="<?php echo URL; ?>Views/template/js/js/jquery-3.1.0.min.js"></script>
+            <script src="<?php echo URL; ?>Views/template/js/jquery-3.1.0.min.js"></script>
             <script src="<?php echo URL; ?>Views/template/js/materialize.js"></script>
+            <script src="<?php echo URL; ?>Views/template/js/js.js"></script>
             <style>
                 body {
                     display: flex;
@@ -40,17 +40,18 @@
                         <div class="nav-wrapper">
                             <a href="#!" class="brand-logo"><i class="material-icons">polymer</i>Getta Framework</a>
                             <ul class="right hide-on-med-and-down">
-                                <li><a href="https://www.facebook.com/eldelaguila77"><i class="material-icons left">perm_identity</i>Eldelaguila77</a></li>
+                                <li><a href="http://eldelaguila77.com/gettaframework"><i class="material-icons left">perm_identity</i>Eldelaguila77</a></li>
                             </ul>
                         </div>
                       </nav>
                 </header>
-            
+                <div class="container">
             <?php
         }
         
         public function __destruct() {
             ?>
+                </div>
                 <footer class="page-footer">
 
                   <div class="footer-copyright">

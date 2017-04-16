@@ -11,7 +11,7 @@ class Config{
         define('DS', DIRECTORY_SEPARATOR);
         // Si estuviera en el index sería así: define('ROOT', realpath(dirname(__FILE__)) . DS); ya que el __file__ es el archivo actual
         define('ROOT', realpath(dirname("../")) . DS);
-        define('URL', "http://localhost/gettaframework/");
+        define('URL', "http://localhost/GettaFramework/");
 
         /* Conexion BD */
         define("useDB",true);
@@ -19,12 +19,9 @@ class Config{
         define("typeDB","PDO");
         define("host", "localhost");
         define("user", "root");
-        define("pass", "");
+        define("pass", "alemania2006");
         define("db", "gettaframework");
-        
-        //Vista de Inicio
-        define("ViewIndex", "products");
-        
+                
         //Mensajes de Error
         define("E404","Error 404 Not found.");
         define("EDBConnection","Error Establishing a Database Connection.");
